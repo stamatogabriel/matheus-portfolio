@@ -4,5 +4,9 @@
     "home": "Home",
     "skills": "Skills",
     "contact": "Contato"
+  },
+  "home": {
+    "hello": "Olá",
+    "I'm": "eu sou o"
   }
 }

@@ -1,14 +1,18 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
+import {  useTranslations } from "next-intl";
 
 import Matheus from "../../../public/matheus.svg";
-import Link from "next/link";
+
+import styles from "./page.module.css";
 
 export default function Home() {
+  const t = useTranslations("home");
+
   return (
     <section className={styles.container}>
       <p className={styles.content}>
-        Olá, <br /> eu sou o{" "}
+        {t('hello')}, <br /> {t("I'm")}{" "}
         <strong className={styles.content__strong}>Matheus</strong> Web Designer{" "}
         <br />
         <Link className={styles.link} href="#">Contate-me</Link>
